@@ -1,0 +1,138 @@
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-text {
+    margin-top: 20px;
+  }
+
+  #nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #nav-bar a {
+    padding: 10px 0;
+  }
+}
+
+/* ALGEMEEN */
+main {
+  margin-top: 180px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #faf9f6;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HEADER STYLING */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; /* blijft bovenop */
+  background-color: #f0f4f3;
+  display: flex;
+  align-items: flex-start;
+  padding: 30px;
+  border-bottom: 2px solid #dde2e0;
+}
+
+#header-img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+  margin-right: 30px;
+  border-radius: 8px;
+}
+
+/* TEXT BLOK NAAST LOGO */
+.header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* TITEL */
+h1 {
+  margin: 0 0 20px 0;
+  font-size: 1.8em;
+  color: #004c4f;
+}
+
+/* NAVIGATIE */
+#nav-bar {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #004c4f;
+  font-weight: 500;
+  padding: 10px 15px;
+  border: 1px solid #004c4f;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #004c4f;
+  color: #fff;
+}
+
+/* SECTIES */
+section {
+  padding: 50px 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* FORMULIER */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+
+input[type="email"] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+input[type="submit"] {
+  background-color: #004c4f;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #00686c;
+}
+
+/* VIDEO */
+#video {
+  width: 100%;
+  max-width: 600px;
+  height: 340px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+}
